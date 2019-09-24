@@ -7,7 +7,7 @@ const Meta = () => (
     <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
     {/* <link rel="shortcut icon" href="/static/favicon.png" /> */}
     <link rel="stylesheet" href="/static/nprogress.css" />
-    <title>Afcihub</title>
+    <title>Amashr</title>
   </Head>
 );
 
