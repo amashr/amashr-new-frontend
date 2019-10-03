@@ -24,14 +24,14 @@ const ButtonStyled = styled.a`
 
 const ButtonSinginStyled = styled(ButtonStyled)`
   background: #7fc9fb;
-  color: #fff;
+  color: ${props => props.theme.white};
   padding: 1rem 2.3rem;
   box-shadow: 0rem 0.8rem 0.9rem 0rem rgba(96, 94, 94, 0.17);
 
   &:hover,
   &:active,
   &:focus {
-    color: #fff;
+    color: ${props => props.theme.white};
     box-shadow: 0 0 0 0 rgba(96, 94, 94, 0.17);
   }
 `;
