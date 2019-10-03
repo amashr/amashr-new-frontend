@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 const HeaderStyled = styled.header`
-  background: purple;
   padding: 0.8rem 1.6rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 
   nav {
     max-width: ${props => props.theme.maxWidth};

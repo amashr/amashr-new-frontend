@@ -18,6 +18,8 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.4rem;
     font-weight: 400;
     background: ${props => props.theme.white};
+    position: relative;
+    padding-top: 8rem;
   }
 
   p {
