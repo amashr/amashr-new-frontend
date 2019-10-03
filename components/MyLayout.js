@@ -1,9 +1,10 @@
-import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Header from './Header';
 import Meta from './Meta';
 
 const theme = {
-  purple: 'purple'
+  purple: 'purple',
+  white: '#fff'
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -19,23 +20,67 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    line-height: 1.6;
+    font-family: 'Rubik', sans-serif;
+    color: #a0a6ad;
+    font-size: 1.4rem;
+    font-weight: 400;
+    background: ${props => props.theme.white};
   }
-`;
 
-const StyledMyLayout = styled.div`
-  /* background: ${props => theme.purple}; */
+  p {
+    font-size: 1.4rem;
+    color: #5e629c;
+    line-height: 2.6rem;
+    margin-bottom: 0; 
+  }
+
+  a:hover, a:focus {
+    color: #000; 
+  }
+
+  a {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    color: #151948;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    list-style: none; 
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: none;
+    outline: none; 
+  }
+
+  a:not([href]):not([tabindex]) {
+    color: ${props => props.theme.white}; 
+  }
+
+  a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
+    color: ${props => props.theme.white}; 
+  }
 `;
 
 const MyLayout = props => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyle />
-      <StyledMyLayout>
-        <Meta />
-        <Header />
-        {props.children}
-      </StyledMyLayout>
+      <Meta />
+      <Header />
+      {props.children}
     </>
   </ThemeProvider>
 );

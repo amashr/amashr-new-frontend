@@ -7,6 +7,14 @@ const Meta = () => (
     <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
     {/* <link rel="shortcut icon" href="/static/favicon.png" /> */}
     <link rel="stylesheet" href="/static/nprogress.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+    />
     <title>Amashr</title>
   </Head>
 );
