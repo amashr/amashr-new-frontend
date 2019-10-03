@@ -20,32 +20,34 @@ const HeaderStyled = styled.header`
 
     .navbar {
       display: flex;
+      align-items: center;
 
       &-item {
+        margin-left: 2.6rem;
+
         .navbar-link {
           text-decoration: none;
           color: #fff;
           font-size: 1.6rem;
           padding: 0.8rem 0rem;
-          margin-left: 2.6rem;
           font-family: 'Poppins', sans-serif;
           font-weight: 500;
           position: relative;
-        }
 
-        .navbar-link::before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 0;
-          height: 0.2rem;
-          background: #fff;
-          transition: 0.3s;
-        }
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0.2rem;
+            background: #fff;
+            transition: 0.3s;
+          }
 
-        .navbar-link:hover::before {
-          width: 100%;
+          &:hover::before {
+            width: 100%;
+          }
         }
       }
     }

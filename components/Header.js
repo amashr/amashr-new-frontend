@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import HeaderStyled from './styles/HeaderStyled';
+import { ButtonSingin } from './Button';
 
 Router.events.on('routeChangeStart', () => {
   NProgress.start();
@@ -63,8 +64,8 @@ const Header = () => (
             Contact
           </a>
         </li>
-        <li className="navbar-item">
-          <a href="#">Download</a>
+        <li className="navbar-item navbar-item-button">
+          <ButtonSingin path="#">Download</ButtonSingin>
         </li>
       </ul>
     </nav>
