@@ -5,7 +5,7 @@ const HeaderStyled = styled.header`
   padding: 0.8rem 1.6rem;
 
   nav {
-    max-width: 120rem;
+    max-width: ${props => props.theme.maxWidth};
     margin: 0 auto;
     padding: 1.5rem 0;
     display: flex;

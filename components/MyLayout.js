@@ -5,7 +5,8 @@ import GlobalStyle from './GlobalStyle';
 
 const theme = {
   purple: 'purple',
-  white: '#fff'
+  white: '#fff',
+  maxWidth: '120rem'
 };
 
 const MyLayout = props => (
