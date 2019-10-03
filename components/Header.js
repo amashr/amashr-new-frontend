@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Router from 'next/router';
 import NProgress from 'nprogress';
-import styled from 'styled-components';
+import HeaderStyled from './styles/HeaderStyled';
 
 Router.events.on('routeChangeStart', () => {
   NProgress.start();
@@ -12,58 +12,6 @@ Router.events.on('routeChangeComplete', () => {
 Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
-
-const HeaderStyled = styled.header`
-  background: purple;
-  padding: 0.8rem 1.6rem;
-
-  nav {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: 1.5rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .logo-nav a {
-      font-size: 2rem;
-      color: ${props => props.theme.white};
-      text-decoration: none;
-    }
-
-    .navbar {
-      display: flex;
-
-      &-item {
-        .navbar-link {
-          text-decoration: none;
-          color: #fff;
-          font-size: 1.6rem;
-          padding: 0.8rem 0rem;
-          margin-left: 2.6rem;
-          font-family: 'Poppins', sans-serif;
-          font-weight: 500;
-          position: relative;
-        }
-
-        .navbar-link::before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 0;
-          height: 0.2rem;
-          background: #fff;
-          transition: 0.3s;
-        }
-
-        .navbar-link:hover::before {
-          width: 100%;
-        }
-      }
-    }
-  }
-`;
 
 const Header = () => (
   <HeaderStyled id="home">
