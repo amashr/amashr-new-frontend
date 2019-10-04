@@ -15,7 +15,7 @@ Router.events.on('routeChangeError', () => {
 });
 
 const Header = props => (
-  <HeaderStyled id="home" isScroll={props.isScroll}>
+  <HeaderStyled isScroll={props.isScroll}>
     <nav>
       <div className="logo-nav">
         <Link href="/">
