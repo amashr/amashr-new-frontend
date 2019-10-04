@@ -34,8 +34,10 @@ const MainStyled = styled.main`
     width: ${props => props.theme.maxWidth};
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
 
     .contents {
+      flex-basis: 50%;
       padding: 22rem 1.5rem 22rem 0;
 
       h1 {
@@ -54,6 +56,7 @@ const MainStyled = styled.main`
     }
 
     .intro-img {
+      flex-basis: 50%;
       padding: 18rem 0 0;
 
       img {
@@ -74,12 +77,11 @@ const Main = () => (
     <div className="content-wrapper">
       <div className="contents">
         <h1 className="head-title">
-          Handcrafted Web Template
-          <br /> For Business and Startups
+          Profitability and Sustainable productivity for your Businesses
         </h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-          <br /> dolores ea fugiat nesciunt quisquam.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores
+          ea fugiat nesciunt quisquam.
         </p>
         <div className="header-button">
           <a href="#">Get started</a>
@@ -88,7 +90,7 @@ const Main = () => (
       </div>
 
       <div className="intro-img">
-        <img src="" alt="Amas HR" />
+        <img src="static/img/main.svg" alt="Amas HR" />
       </div>
     </div>
   </MainStyled>
