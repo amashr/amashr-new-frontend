@@ -38,7 +38,7 @@ const MainStyled = styled.main`
 
     .contents {
       flex-basis: 50%;
-      padding: 22rem 1.5rem 22rem 0;
+      padding: 12rem 1.5rem 25rem 0;
 
       h1 {
         color: ${props => props.theme.white};
