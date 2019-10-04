@@ -1,7 +1,13 @@
+import styled from 'styled-components';
+
+const AboutStyled = styled.section`
+  background: purple;
+`;
+
 const About = () => (
-  <section>
+  <AboutStyled id="about">
     <h2>About</h2>
-  </section>
+  </AboutStyled>
 );
 
 export default About;

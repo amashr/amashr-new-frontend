@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { ButtonBorderFill, ButtonBorder } from './Button';
 
 const MainStyled = styled.main`
+  position: relative;
   .overlay {
     position: absolute;
     width: 100%;
@@ -40,7 +41,7 @@ const MainStyled = styled.main`
 
     .contents {
       flex-basis: 50%;
-      padding: 12rem 1.5rem 20rem 0;
+      padding: 20rem 1.5rem 20rem 0;
 
       h1 {
         color: ${props => props.theme.white};
