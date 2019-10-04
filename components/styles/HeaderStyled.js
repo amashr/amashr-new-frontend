@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 
 const HeaderStyled = styled.header`
+  background: ${props =>
+    props.isScroll ? props.theme.mainGradient : 'transparent'};
+  box-shadow: ${props =>
+    props.isScroll ? '0 0 0.7rem 0.1rem rgba(0, 0, 0, 0.1)' : 'none'};
   padding: 0.8rem 1.6rem;
+  transition: all 0.5s ease-in-out;
   position: fixed;
   width: 100%;
   top: 0;

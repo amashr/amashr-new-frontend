@@ -14,8 +14,8 @@ Router.events.on('routeChangeError', () => {
   NProgress.done();
 });
 
-const Header = () => (
-  <HeaderStyled id="home">
+const Header = props => (
+  <HeaderStyled id="home" isScroll={props.isScroll}>
     <nav>
       <div className="logo-nav">
         <Link href="/">

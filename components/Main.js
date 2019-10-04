@@ -9,7 +9,7 @@ const MainStyled = styled.main`
     height: 100%;
     top: 0rem;
     left: 0rem;
-    background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+    background: ${props => props.theme.mainGradient};
     transform: skewY(-12deg);
     transform-origin: 0;
     z-index: -12;
@@ -18,14 +18,14 @@ const MainStyled = styled.main`
       position: absolute;
       width: calc(100% / 2);
       top: 0;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      background: ${props => props.theme.mainGradient};
       height: 20rem;
     }
 
     &-two {
       width: calc(100% / 3);
       bottom: 0;
-      background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
+      background: ${props => props.theme.mainGradient};
       position: absolute;
       height: 15.5rem;
       left: 1.6%;
