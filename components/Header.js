@@ -65,7 +65,9 @@ const Header = () => (
           </a>
         </li>
         <li className="navbar-item navbar-item-button">
-          <ButtonSingin path="#">Download</ButtonSingin>
+          <Link href="#">
+            <ButtonSingin>Download</ButtonSingin>
+          </Link>
         </li>
       </ul>
     </nav>

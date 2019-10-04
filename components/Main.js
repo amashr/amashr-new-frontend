@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import styled from 'styled-components';
+import { ButtonBorderFill, ButtonBorder } from './Button';
 
 const MainStyled = styled.main`
   .overlay {
@@ -26,7 +28,7 @@ const MainStyled = styled.main`
       background: linear-gradient(95deg, #5533ff 40%, #25ddf5 100%);
       position: absolute;
       height: 15.5rem;
-      left: 3%;
+      left: 1.6%;
     }
   }
 
@@ -38,7 +40,7 @@ const MainStyled = styled.main`
 
     .contents {
       flex-basis: 50%;
-      padding: 12rem 1.5rem 25rem 0;
+      padding: 12rem 1.5rem 20rem 0;
 
       h1 {
         color: ${props => props.theme.white};
@@ -53,11 +55,20 @@ const MainStyled = styled.main`
         font-size: 1.8rem;
         line-height: 2.6rem;
       }
+
+      .header-button {
+        margin-top: 4rem;
+        display: flex;
+
+        a:first-child {
+          margin-right: 2rem;
+        }
+      }
     }
 
     .intro-img {
       flex-basis: 50%;
-      padding: 18rem 0 0;
+      padding: 7rem 0 0;
 
       img {
         display: block;
@@ -84,8 +95,12 @@ const Main = () => (
           ea fugiat nesciunt quisquam.
         </p>
         <div className="header-button">
-          <a href="#">Get started</a>
-          <a href="#">Contact us</a>
+          <Link href="#">
+            <ButtonBorderFill>Get started</ButtonBorderFill>
+          </Link>
+          <Link href="#">
+            <ButtonBorder>Contact us</ButtonBorder>
+          </Link>
         </div>
       </div>
 
