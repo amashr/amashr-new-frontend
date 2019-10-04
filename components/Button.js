@@ -54,17 +54,18 @@ const ButtonBorderFill = styled(Button)`
 `;
 
 const ButtonBorder = styled(Button)`
-  border: 1px solid #fff;
+  border: 0.1rem solid #fff;
   color: #3ecf8e !important;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  width: 180px;
-  height: 50px;
-  padding: 15px 15px;
+  box-shadow: 0 0.4rem 0.6rem rgba(50, 50, 93, 0.11),
+    0 0.1rem 0.3rem rgba(0, 0, 0, 0.08);
+  width: 18rem;
+  height: 5rem;
+  padding: 1.5rem 1.5rem;
   background: #fff;
 
   &:hover {
-    box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
-    transform: translateY(-2px);
+    box-shadow: 0rem 0.8rem 0.9rem 0rem rgba(96, 94, 94, 0.17);
+    transform: translateY(-0.2rem);
   }
 `;
 
