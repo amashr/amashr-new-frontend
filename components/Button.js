@@ -42,7 +42,6 @@ const ButtonBorderFill = styled(Button)`
   color: #fff;
   box-shadow: 0 0.8rem 0.9rem 0 rgba(96, 94, 94, 0.17);
   width: 18rem;
-  height: 5rem;
   padding: 1.5rem 1.5rem;
 
   &:hover {
@@ -59,7 +58,6 @@ const ButtonBorder = styled(Button)`
   box-shadow: 0 0.4rem 0.6rem rgba(50, 50, 93, 0.11),
     0 0.1rem 0.3rem rgba(0, 0, 0, 0.08);
   width: 18rem;
-  height: 5rem;
   padding: 1.5rem 1.5rem;
   background: #fff;
 
@@ -69,4 +67,17 @@ const ButtonBorder = styled(Button)`
   }
 `;
 
-export { Button, ButtonSingin, ButtonBorderFill, ButtonBorder };
+const ButtonCommon = styled(Button)`
+  background-color: #3ecf8e;
+  z-index: 1;
+  box-shadow: 0rem 0.8rem 0.9rem 0rem rgba(96, 94, 94, 0.17);
+  width: 16rem;
+  padding: 1.4rem 1.5rem;
+
+  &:hover {
+    color: #fff;
+    transform: translateY(-0.2rem);
+  }
+`;
+
+export { Button, ButtonSingin, ButtonBorderFill, ButtonBorder, ButtonCommon };

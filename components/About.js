@@ -1,5 +1,7 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 import Card from './Card';
+import { ButtonCommon } from './Button';
 
 const AboutStyled = styled.section`
   padding: 13rem 0;
@@ -119,7 +121,9 @@ const About = () => (
             ea commodo consequat. Duis aute irure dolor in reprehenderit in
             voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </p>
-          <a href="#">Download</a>
+          <Link href="#">
+            <ButtonCommon>Download</ButtonCommon>
+          </Link>
         </div>
       </div>
     </div>
