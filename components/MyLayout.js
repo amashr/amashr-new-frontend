@@ -8,6 +8,7 @@ const theme = {
   purple: 'purple',
   white: '#fff',
   maxWidth: '114rem',
+  green: '#3ecf8e',
   mainGradient: 'linear-gradient(95deg, #5533ff 40%, #25ddf5 100%)'
 };
 
