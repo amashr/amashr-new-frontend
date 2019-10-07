@@ -48,6 +48,11 @@ const GlobalStyle = createGlobalStyle`
     list-style: none; 
   }
 
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
   a:hover,
   a:focus {
     text-decoration: none;

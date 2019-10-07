@@ -12,6 +12,39 @@ const AboutStyled = styled.section`
       display: flex;
       justify-content: space-between;
     }
+
+    .content-wrapper {
+      padding-top: 10rem;
+      display: flex;
+
+      .content-img,
+      .content-info {
+        flex: 1 50%;
+      }
+
+      .content-img {
+        /* flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1; */
+
+        img {
+          /* max-width: 100%; */
+        }
+      }
+
+      .content-info {
+        h3 {
+          font-size: 3.5rem;
+          font-weight: 600;
+          margin-bottom: 2.5rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
   }
 `;
 
@@ -37,14 +70,15 @@ const About = () => (
             incididunt ut labore et dolore magna.
           </p>
         </Card>
+
         <Card>
           <div className="icon">
             <svg
               width="24"
               height="24"
               xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
             >
               <path d="M12 0c-5.083 0-8.465 4.949-3.733 13.678 1.596 2.945-1.725 3.641-5.09 4.418-3.073.709-3.187 2.235-3.177 4.904l.004 1h23.99l.004-.969c.012-2.688-.093-4.223-3.177-4.935-3.438-.794-6.639-1.49-5.09-4.418 4.719-8.912 1.251-13.678-3.731-13.678m0 1c1.89 0 3.39.764 4.225 2.15 1.354 2.251.866 5.824-1.377 10.06-.577 1.092-.673 2.078-.283 2.932.937 2.049 4.758 2.632 6.032 2.928 2.303.534 2.412 1.313 2.401 3.93h-21.998c-.01-2.615.09-3.396 2.401-3.93 1.157-.266 5.138-.919 6.049-2.94.387-.858.284-1.843-.304-2.929-2.231-4.115-2.744-7.764-1.405-10.012.84-1.412 2.353-2.189 4.259-2.189" />
             </svg>
@@ -55,14 +89,15 @@ const About = () => (
             incididunt ut labore et dolore magna.
           </p>
         </Card>
+
         <Card>
           <div className="icon">
             <svg
               width="24"
               height="24"
               xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
             >
               <path d="M9.484 15.696l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm0-5l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm0-5l-.711-.696-2.552 2.607-1.539-1.452-.698.709 2.25 2.136 3.25-3.304zm10.516 11.304h-8v1h8v-1zm0-5h-8v1h8v-1zm0-5h-8v1h8v-1zm4-5h-24v20h24v-20zm-1 19h-22v-18h22v18z" />
             </svg>
@@ -74,11 +109,12 @@ const About = () => (
           </p>
         </Card>
       </div>
-      <div>
-        <div>
+
+      <div className="content-wrapper">
+        <div className="content-img">
           <img src="static/img/about.svg" alt="About" />
         </div>
-        <div>
+        <div className="content-info">
           <h3>Innovative and Collaborative Human Capital Solutions</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
