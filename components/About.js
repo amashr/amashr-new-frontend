@@ -16,6 +16,7 @@ const AboutStyled = styled.section`
     .content-wrapper {
       padding-top: 10rem;
       display: flex;
+      align-items: center;
 
       .content-img,
       .content-info {
@@ -23,16 +24,11 @@ const AboutStyled = styled.section`
       }
 
       .content-img {
-        /* flex-basis: 50%;
-        flex-grow: 1;
-        flex-shrink: 1; */
-
-        img {
-          /* max-width: 100%; */
-        }
+        padding-right: 4.8rem;
       }
 
       .content-info {
+        padding-left: 2.4rem;
         h3 {
           font-size: 3.5rem;
           font-weight: 600;
