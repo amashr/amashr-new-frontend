@@ -3,9 +3,11 @@ import styled from 'styled-components';
 const Card = styled.div`
   display: flex;
   flex-direction: column;
+  text-align: center;
   padding: 6rem 3rem;
   border: 0.1rem solid #ddd;
   transition: all 0.8s ease;
+  max-width: 31.5%;
 
   &:hover {
     border: 0.1rem solid ${props => props.theme.green};
