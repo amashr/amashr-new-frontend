@@ -37,12 +37,12 @@ const ButtonSingin = styled(Button)`
 `;
 
 const ButtonBorderFill = styled(Button)`
-  background-color: #3ecf8e;
-  border: 0.1rem solid #3ecf8e;
+  background-color: ${props => props.theme.green};
+  border: 0.1rem solid ${props => props.theme.green};
   color: #fff;
   box-shadow: 0 0.8rem 0.9rem 0 rgba(96, 94, 94, 0.17);
   width: 18rem;
-  padding: 1.5rem 1.5rem;
+  padding: 1.7rem 1.5rem;
 
   &:hover {
     color: #fff;
@@ -54,11 +54,11 @@ const ButtonBorderFill = styled(Button)`
 
 const ButtonBorder = styled(Button)`
   border: 0.1rem solid #fff;
-  color: #3ecf8e !important;
+  color: ${props => props.theme.green} !important;
   box-shadow: 0 0.4rem 0.6rem rgba(50, 50, 93, 0.11),
     0 0.1rem 0.3rem rgba(0, 0, 0, 0.08);
   width: 18rem;
-  padding: 1.5rem 1.5rem;
+  padding: 1.7rem 1.5rem;
   background: #fff;
 
   &:hover {
@@ -68,11 +68,11 @@ const ButtonBorder = styled(Button)`
 `;
 
 const ButtonCommon = styled(Button)`
-  background-color: #3ecf8e;
+  background-color: ${props => props.theme.green};
   z-index: 1;
   box-shadow: 0rem 0.8rem 0.9rem 0rem rgba(96, 94, 94, 0.17);
   width: 16rem;
-  padding: 1.4rem 1.5rem;
+  padding: 1.7rem 1.5rem;
 
   &:hover {
     color: #fff;
