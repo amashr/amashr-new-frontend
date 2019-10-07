@@ -25,44 +25,39 @@ const Header = props => (
 
       <ul className="navbar">
         <li className="navbar-item">
-          <a className="navbar-link" href="#home">
-            Home
-          </a>
+          <Link href="/">
+            <a className="navbar-link">Home</a>
+          </Link>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#about">
-            About
-          </a>
+          <Link href="/about">
+            <a className="navbar-link">About</a>
+          </Link>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#services">
-            Services
-          </a>
+          <Link href="/services">
+            <a className="navbar-link">Services</a>
+          </Link>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#showcase">
-            Showcase
-          </a>
+          <Link href="/pricing">
+            <a className="navbar-link">Pricing</a>
+          </Link>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#pricing">
-            Pricing
-          </a>
+          <Link href="/team">
+            <a className="navbar-link">Team</a>
+          </Link>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#team">
-            Team
-          </a>
+          <Link href="/blog">
+            <a className="navbar-link">Blog</a>
+          </Link>
         </li>
         <li className="navbar-item">
-          <a className="navbar-link" href="#blog">
-            Blog
-          </a>
-        </li>
-        <li className="navbar-item">
-          <a className="navbar-link" href="#contact">
-            Contact
-          </a>
+          <Link href="/contact">
+            <a className="navbar-link">Contact</a>
+          </Link>
         </li>
         <li className="navbar-item navbar-item-button">
           <Link href="#">

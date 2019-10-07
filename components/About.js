@@ -47,7 +47,7 @@ const AboutStyled = styled.section`
 `;
 
 const About = () => (
-  <AboutStyled id="about">
+  <AboutStyled>
     <div className="about-wrapper">
       <div className="card-wrapper">
         <Card>

@@ -81,7 +81,7 @@ const MainStyled = styled.main`
 `;
 
 const Main = () => (
-  <MainStyled id="home">
+  <MainStyled>
     <div className="overlay">
       <span className="overlay-one" />
       <span className="overlay-two" />
