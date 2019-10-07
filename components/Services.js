@@ -27,6 +27,21 @@ const ServicesStyled = styled.section`
 
     .services-item-wrapper {
       background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+
+      & > div {
+        flex-basis: 50%;
+      }
+
+      & > :nth-child(odd) {
+        border-bottom: 1px solid #ededed;
+        border-right: 1px solid #ededed;
+      }
+
+      & > :nth-child(even) {
+        border-bottom: 1px solid #ededed;
+      }
     }
   }
 `;

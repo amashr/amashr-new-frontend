@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const ServiceItem = styled.div`
   padding: 3rem;
   transition: all 0.8s ease;
-  border: 0.1rem solid #ededed;
   display: flex;
 
   &:hover {
