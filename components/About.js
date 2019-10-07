@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Card from './Card';
 
 const AboutStyled = styled.section`
   padding: 13rem 0;
@@ -13,16 +14,7 @@ const About = () => (
   <AboutStyled id="about">
     <div className="about-wrapper">
       <div>
-        <div className="about-item">
-          <div className="icon">
-            <img src="static/img/gear.svg" alt="Setting" />
-          </div>
-          <h2>Bootstrap</h2>
-          <p>
-            Share processes and data secure lona need to know basis Our team
-            assured your web site is always safe.
-          </p>
-        </div>
+        <Card />
       </div>
       <div>
         <div>
